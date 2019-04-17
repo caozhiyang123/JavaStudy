@@ -5,6 +5,10 @@ import java.io.FileFilter;
 import java.io.FilenameFilter;
 import java.io.IOException;
 import java.util.Date;
+import java.util.concurrent.ConcurrentLinkedQueue;
+import java.util.concurrent.LinkedBlockingQueue;
+
+import com.google.common.io.Files;
 
 public class FileDemo
 {
@@ -15,9 +19,25 @@ public class FileDemo
     
     
 
+    /**
+     * Files Utils:
+     *  copy(),createParentDirs(),equal(),createTempDir(),
+     *  getFileExtension()£¬getNameWithoutExtension()
+     */
     private static void test14()
     {
-        
+        try
+        {
+//            Files.copy(new File("a/a.txt"), new File("c/c.txt"));
+//            Files.createParentDirs(new File("b/c/e/f"));
+//            System.out.println(Files.equal(new File("a/a.txt"), new File("c/c.txt")));
+//            File tempDir = Files.createTempDir();System.out.println(tempDir.getName());
+//            System.out.println(Files.getFileExtension("a/a.txt"));
+//            System.out.println(Files.getNameWithoutExtension("a/a.txt"));
+        } catch (Exception e)
+        {
+            e.printStackTrace();
+        }
     }
 
 

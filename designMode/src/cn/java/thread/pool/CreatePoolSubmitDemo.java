@@ -36,11 +36,9 @@ public class CreatePoolSubmitDemo
         public MyTask(int num) {
             this.taskNum = num;
         }
-         
         @Override
         public void run() {
             System.out.println("正在执行task "+taskNum);
-//            Thread.currentThread().sleep(4000);
             System.out.println(1/0);
             System.out.println("task "+taskNum+"执行完毕");
         }
